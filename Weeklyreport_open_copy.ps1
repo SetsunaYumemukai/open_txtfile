@@ -17,13 +17,12 @@ Set-Location -Path $targetDirectory
 # Weeklyreport_tempファイルをコピー
 $sourceFile = "Weeklyreport_temp.txt"
 $destinationFolder = Join-Path -Path $targetDirectory -ChildPath (Join-Path -Path $year'年' -ChildPath $month'月')
-# $destinationFolder = '{0}\{1}年\{2}月' -f $targetDirectory, $year, $month
 
 $destinationFileName ='Weeklyreport_{0}' -f $today
 
 $destinationPath = Join-Path -Path $destinationFolder -ChildPath ('{0}.txt' -f $destinationFileName)
 
-echo $destinationPath
+# echo $destinationPath
 Copy-Item -Path $sourceFile -Destination $destinationPath
 
 # Weeklyreport_todayファイルを開く
