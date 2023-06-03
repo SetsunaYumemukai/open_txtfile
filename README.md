@@ -5,9 +5,9 @@ BAT file to open a TEXT file.
 ## カレントディレクトリを変更
 $targetDirectory = Join-Path ([Environment]::GetFolderPath("Desktop")) -ChildPath 'Weeklyreport'
 Set-Location -Path $targetDirectory
-↑はDesktopフォルダにしているので、任意のフォルダに変更すること。
+上記コードはDesktopフォルダにしているので、任意のフォルダに変更すること。
 
 ## Weeklyreport_tempファイルをコピー
 Weeklyreport_tempファイルをコピーするフォルダは、
-YYYY年＞MM月
+YYYY年＞M月
 となっている。
